@@ -7,17 +7,23 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sarahtordeur.todoapp",
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.sarahtordeur.todoapp",
+      "runtimeVersion": {
+        "policy": "appVersion"
       }
     },
     "web": {
@@ -27,6 +33,9 @@
       "eas": {
         "projectId": "6ecdb919-4a5a-490b-9d91-07880051621e"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6ecdb919-4a5a-490b-9d91-07880051621e"
     }
   }
 }
